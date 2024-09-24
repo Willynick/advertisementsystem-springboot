@@ -1,0 +1,16 @@
+com/senlainc/advertisementsystem/dao/UserRepository.class
+com/senlainc/advertisementsystem/dao/CountryRepository.class
+com/senlainc/advertisementsystem/dao/OrderRepository.class
+com/senlainc/advertisementsystem/dao/GenericDao.class
+com/senlainc/advertisementsystem/dao/RoleRepository.class
+com/senlainc/advertisementsystem/dao/old/OrderRepositoryCustom.class
+com/senlainc/advertisementsystem/dao/CommentRepository.class
+com/senlainc/advertisementsystem/dao/ProfileRepository.class
+com/senlainc/advertisementsystem/dao/PurchaseRepository.class
+com/senlainc/advertisementsystem/dao/AddressRepository.class
+com/senlainc/advertisementsystem/dao/AdvertisementRepository.class
+com/senlainc/advertisementsystem/dao/BaseRepository.class
+com/senlainc/advertisementsystem/dao/RatingRepository.class
+com/senlainc/advertisementsystem/dao/MessageRepository.class
+com/senlainc/advertisementsystem/dao/CategoryRepository.class
+com/senlainc/advertisementsystem/dao/CityRepository.class

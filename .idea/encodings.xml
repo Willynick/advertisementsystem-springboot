@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/backend/backendutils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/daospec/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/dto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/exceptionhandling/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/serviceapi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/serviceimpl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/validatorapi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/validatorimpl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jwtsecurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modelmapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

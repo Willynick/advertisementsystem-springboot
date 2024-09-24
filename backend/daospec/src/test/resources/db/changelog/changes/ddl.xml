@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="ddl" author="Ilya Kshyvitski">
+
+        <createTable tableName="users">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="varchar(50)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="password" type="varchar(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="language" type="varchar(4)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="countries">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="cities">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_cities_1" references="countries(id)"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="categories">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_category_id" type="bigint" defaultValue="null">
+                <constraints nullable="true" foreignKeyName="fk_categories_1" references="categories(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="profiles">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" unique="true" foreignKeyName="fk_profiles_1" references="users(id)"/>
+            </column>
+            <column name="first_name" type="varchar(50)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="second_name" type="varchar(50)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="email" type="varchar(50)" defaultValue="null">
+                <constraints nullable="true" unique="true"/>
+            </column>
+            <column name="date_of_birth" type="date" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="gender" type="boolean" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="amount_of_money" type="numeric(12,2)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="average_rating" type="numeric(4,2)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="ratings">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rating" type="int" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="sender_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_ratings_1" references="profiles(id)"/>
+            </column>
+            <column name="recipient_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_ratings_2" references="profiles(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="advertisements">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="profile_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_advertisements_1" references="profiles(id)"/>
+            </column>
+            <column name="title" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(5000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="manufacturer" type="varchar(50)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="product_condition" type="varchar(15)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="phone_number" type="varchar(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="upload_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="change_date" type="timestamp" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="price" type="numeric(12,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="category_id" type="bigint" defaultValue="null">
+                <constraints nullable="true" foreignKeyName="fk_advertisements_2" references="categories(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="addresses">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="address" type="varchar(500)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="city_id" type="bigint" defaultValue="null">
+                <constraints nullable="true" foreignKeyName="fk_addresses_1" references="cities(id)"/>
+            </column>
+            <column name="advertisement_id" type="bigint" defaultValue="null">
+                <constraints nullable="true" foreignKeyName="fk_addresses_2" references="advertisements(id)"/>
+            </column>
+            <column name="profile_id" type="bigint" defaultValue="null">
+                <constraints nullable="true" foreignKeyName="fk_addresses_3" references="profiles(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="roles">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="users_roles">
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" foreignKeyName="fk_users_roles_1" references="users(id)"/>
+            </column>
+            <column name="role_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" foreignKeyName="fk_users_roles_2" references="roles(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="permissions">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="roles_permissions">
+            <column name="role_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" foreignKeyName="fk_roles_permissions_1" references="roles(id)"/>
+            </column>
+            <column name="permission_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" foreignKeyName="fk_roles_permissions_2" references="permissions(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="comments">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="text" type="varchar(2000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="upload_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="profile_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_comments_1" references="profiles(id)"/>
+            </column>
+            <column name="advertisement_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_comments_2" references="advertisements(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="messages">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="sender_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_messages_1" references="profiles(id)"/>
+            </column>
+            <column name="recipient_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_messages_2" references="profiles(id)"/>
+            </column>
+            <column name="message" type="varchar(2000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="upload_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="readed" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="orders">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="profile_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_orders_1" references="profiles(id)"/>
+            </column>
+            <column name="date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_type" type="varchar(50)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="purchases">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="earned_money" type="numeric(12,2)" defaultValue="null">
+                <constraints nullable="true"/>
+            </column>
+            <column name="advertisement_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_purchases_1" references="advertisements(id)"/>
+            </column>
+            <column name="order_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_purchases_2" references="orders(id)"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="status_orders">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="change_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="order_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_status_orders_1" references="orders(id)"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

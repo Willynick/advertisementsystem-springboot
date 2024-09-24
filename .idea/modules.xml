@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/backendutils/backendutils.iml" filepath="$PROJECT_DIR$/backend/backendutils/backendutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/controller/controller.iml" filepath="$PROJECT_DIR$/backend/controller/controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/dao/dao.iml" filepath="$PROJECT_DIR$/backend/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/daospec/daospec.iml" filepath="$PROJECT_DIR$/backend/daospec/daospec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/dto/dto.iml" filepath="$PROJECT_DIR$/backend/dto/dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/exceptionhandling/exceptionhandling.iml" filepath="$PROJECT_DIR$/backend/exceptionhandling/exceptionhandling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwtsecurity/jwtsecurity.iml" filepath="$PROJECT_DIR$/jwtsecurity/jwtsecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/mapper/mapper.iml" filepath="$PROJECT_DIR$/backend/mapper/mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/model/model.iml" filepath="$PROJECT_DIR$/backend/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/serviceapi/serviceapi.iml" filepath="$PROJECT_DIR$/backend/serviceapi/serviceapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/serviceimpl/serviceimpl.iml" filepath="$PROJECT_DIR$/backend/serviceimpl/serviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/validatorapi/validatorapi.iml" filepath="$PROJECT_DIR$/backend/validatorapi/validatorapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/validatorimpl/validatorimpl.iml" filepath="$PROJECT_DIR$/backend/validatorimpl/validatorimpl.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/CountryRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/ProfileRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/CommentRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/RatingRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/AddressRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/GenericDao.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/old/OrderRepositoryCustom.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/OrderRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/CityRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/MessageRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/CategoryRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/UserRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/RoleRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/BaseRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/AdvertisementRepository.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/dao/src/main/java/com/senlainc/advertisementsystem/dao/PurchaseRepository.java

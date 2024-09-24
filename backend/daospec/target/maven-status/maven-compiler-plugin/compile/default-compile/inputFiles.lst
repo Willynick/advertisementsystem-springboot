@@ -1,0 +1,13 @@
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/BaseRepositoryImpl.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/OrderRepositoryImpl.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/RoleRepositoryImpl.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/AdvertisementSpecification.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/CommentRepositoryImpl.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/CategorySpecification.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/exception/DatabaseException.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/old/RoleSpecification.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/JpaAbstractDao.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/UserRepositoryImpl.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/CountrySpecification.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/old/UserSpecification.java
+/home/user/Ilya/Projects/Final-Project/advertisementsystem-springboot/backend/daospec/src/main/java/com/senlainc/advertisementsystem/daospec/old/OrderSpecification.java

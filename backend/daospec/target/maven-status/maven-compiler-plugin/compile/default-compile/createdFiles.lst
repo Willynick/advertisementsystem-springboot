@@ -1,0 +1,13 @@
+com/senlainc/advertisementsystem/daospec/CommentRepositoryImpl.class
+com/senlainc/advertisementsystem/daospec/CountrySpecification.class
+com/senlainc/advertisementsystem/daospec/old/UserSpecification.class
+com/senlainc/advertisementsystem/daospec/BaseRepositoryImpl.class
+com/senlainc/advertisementsystem/daospec/CategorySpecification.class
+com/senlainc/advertisementsystem/daospec/old/RoleSpecification.class
+com/senlainc/advertisementsystem/daospec/RoleRepositoryImpl.class
+com/senlainc/advertisementsystem/daospec/UserRepositoryImpl.class
+com/senlainc/advertisementsystem/daospec/AdvertisementSpecification.class
+com/senlainc/advertisementsystem/daospec/old/OrderSpecification.class
+com/senlainc/advertisementsystem/daospec/exception/DatabaseException.class
+com/senlainc/advertisementsystem/daospec/OrderRepositoryImpl.class
+com/senlainc/advertisementsystem/daospec/JpaAbstractDao.class

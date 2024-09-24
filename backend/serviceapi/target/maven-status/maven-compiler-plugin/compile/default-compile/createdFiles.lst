@@ -1,0 +1,12 @@
+com/senlainc/advertisementsystem/serviceapi/CategoryService.class
+com/senlainc/advertisementsystem/serviceapi/MessageService.class
+com/senlainc/advertisementsystem/serviceapi/AdvertisementService.class
+com/senlainc/advertisementsystem/serviceapi/RatingService.class
+com/senlainc/advertisementsystem/serviceapi/UserService.class
+com/senlainc/advertisementsystem/serviceapi/CountryService.class
+com/senlainc/advertisementsystem/serviceapi/AuthenticationService.class
+com/senlainc/advertisementsystem/serviceapi/CommentService.class
+com/senlainc/advertisementsystem/serviceapi/OrderService.class
+com/senlainc/advertisementsystem/serviceapi/PurchaseService.class
+com/senlainc/advertisementsystem/serviceapi/CityService.class
+com/senlainc/advertisementsystem/serviceapi/ProfileService.class
